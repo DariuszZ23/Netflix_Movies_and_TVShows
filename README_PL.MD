@@ -47,8 +47,9 @@ projekt/
 
 ### ▶️ Jak uruchomić program
 
-1. Umieść plik `netflix_titles.csv` w odpowiednim katalogu.
-2. Uzupełnij poprawną ścieżkę do pliku CSV w zmiennej:
+1. Pobierz plik csv z https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download
+2. Umieść plik `netflix_titles.csv` w odpowiednim katalogu.
+3. Uzupełnij poprawną ścieżkę do pliku CSV w zmiennej:
 
 ```python
 csv_file = r"C:\Users\Dariusz\PyCharmMiscProject\netflix_titles\netflix_titles.csv"

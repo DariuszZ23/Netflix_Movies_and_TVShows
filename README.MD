@@ -45,8 +45,9 @@ project/
 
 ### ▶️ How to Run the Program
 
-1. Place the `netflix_titles.csv` file in the correct directory.
-2. Update the CSV file path in the following variable:
+1. Download the csv file from https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download
+2. Place the `netflix_titles.csv` file in the correct directory.
+3. Update the CSV file path in the following variable:
 
 ```python
 csv_file = r"C:\Users\Dariusz\PyCharmMiscProject\netflix_titles\netflix_titles.csv"
