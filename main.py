@@ -8,7 +8,7 @@ import os
 import matplotlib.pyplot as plt
 
 def netflix_statistics(name):
-    csv_file = r"C:\Users\Dariusz\PyCharmMiscProject\netflix_titles\netflix_titles.csv"
+    csv_file = r"./netflix_titles.csv"
 
     if os.path.exists(csv_file):
         print("Plik istnieje")
