@@ -56,7 +56,7 @@ csv_file = r"./netflix_titles.csv"
 3. Run the program:
 
 ```bash
-python main.py
+python netflix_viewership.py
 ```
 
 ---
