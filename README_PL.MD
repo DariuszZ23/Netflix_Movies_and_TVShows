@@ -52,7 +52,7 @@ projekt/
 3. Uzupełnij poprawną ścieżkę do pliku CSV w zmiennej:
 
 ```python
-csv_file = r"C:\Users\Dariusz\PyCharmMiscProject\netflix_titles\netflix_titles.csv"
+csv_file = r"./netflix_titles.csv"
 ```
 
 3. Uruchom program:
