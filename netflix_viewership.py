@@ -15,13 +15,29 @@ def netflix_statistics(name):
 def productions_by_country(cursor: Cursor):
     # top 10 krajów produkcji
     cursor.execute("""
-                   SELECT country, COUNT(*) AS total_titles
-                   FROM netflix_titles
-                   WHERE country IS NOT NULL
-                     AND country != ''
-                   GROUP BY country
-                   ORDER BY total_titles DESC
-                       LIMIT 10;
+                   WITH RECURSIVE split(country, rest) AS (
+    SELECT
+        '',
+        country || ','
+    FROM netflix_titles
+    WHERE country IS NOT NULL
+      AND country <> ''
+
+    UNION ALL
+
+    SELECT
+        TRIM(SUBSTR(rest, 1, INSTR(rest, ',') - 1)),
+        SUBSTR(rest, INSTR(rest, ',') + 1)
+    FROM split
+    WHERE rest <> ''
+)
+
+SELECT country, COUNT(*) AS total_titles
+FROM split
+WHERE country <> ''
+GROUP BY country
+ORDER BY total_titles DESC
+                   LIMIT 10;
                    """)
 
     results = cursor.fetchall()

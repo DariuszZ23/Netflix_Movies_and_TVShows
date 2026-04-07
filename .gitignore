@@ -3,3 +3,4 @@ sqlite_connection.py
 __pycache__/
 *.pyc
 netflix.db
+.idea/
