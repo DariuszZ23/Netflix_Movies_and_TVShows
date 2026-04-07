@@ -95,5 +95,15 @@ Program wyświetli:
 * wykres kołowy filmów i seriali,
 * wykres słupkowy dla top 10 krajów produkcji.
 
+
+🥧 Wykres kołowy
+![Pie Chart](images/pie_chart.png)
+
+📊 Wykres słupkowy
+![Bar Chart](images/bar_chart.png)
 ---
+
+### ‍💻 Autor
+
+Dariusz Zerynger
 

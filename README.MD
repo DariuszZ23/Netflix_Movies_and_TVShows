@@ -92,3 +92,12 @@ The program displays:
 * the total number of records,
 * a pie chart of movies vs TV shows,
 * a bar chart for the top 10 production countries.
+
+🥧 Pie Chart
+![Pie Chart](images/pie_chart.png)
+
+📊 Bar Chart
+![Bar Chart](images/bar_chart.png)
+
+### ‍💻 Autor
+Dariusz Zerynger
